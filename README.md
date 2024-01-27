@@ -37,11 +37,14 @@ Evaluate your organization's existing IT infrastructure and computing resources.
 5. Methods that provide recourse for those who have been adversely affected by model predictions 
 
 Depending on the model complexity, methods for model interpretability can be classified into intrinsic analysis and post hoc analysis.Intrinsic analysis can be applied to interpret models that have low complexity (simple relationships between the input variables and the predictions) while post hoc analysis can be applied to interpret simpler models as well as more complex models, such as neural networks, which have the ability to capture non-linear interactions [2]. These methods are often model-agnostic and provide mechanisms to interpret a trained model based on the inputs and output predictions. Post hoc analysis can be performed at a local level, or at a global level [2]. An AWS white paper provides a detailed explanation of the various techniques for model interpretability and can be accessed here (https://docs.aws.amazon.com/whitepapers/latest/ml-best-practices-healthcare-life-sciences/model-interpretability.html)
-
-
-
-
-
-  # References:
+ # References:
 1. https://christophm.github.io/interpretable-ml-book/simple.html
 2. https://docs.aws.amazon.com/whitepapers/latest/ml-best-practices-healthcare-life-sciences/model-interpretability.html
+
+ # Avoid bias evolving in the learning model over time:
+ Bias in machine learning models refers to systematic errors introduced by algorithms or training data that lead to unfair or disproportionate predictions for specific groups or individuals [1]. Such biases can arise due to historical imbalances in the training data, algorithm design, or data collection process [1]. You avoid bias evolving in the ML model over time by assesing several metrics and methodologies used to assess bias namely [1];
+- Disparate Impact Analysis: This technique examines the disparate impact of an AI model's decisions on different demographic groups. It measures the difference in model outcome for various groups and highlights potential biases.
+- Fairness Metrics: Different fairness metrics have been developed to measure bias in machine learning models. Key examples include Equal Opportunity Difference, Disparate Misclassification Rate, and Treatment Equality. These metrics help assess how fairly the model treats different groups. 
+- Post-hoc Analysis: This involves examining an AI system’s decisions after deployment to identify instances of bias and understand its impact on users and society.
+# References:
+1. https://encord.com/blog/reducing-bias-machine-learning/
