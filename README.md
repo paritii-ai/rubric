@@ -35,6 +35,7 @@ Evaluate your organization's existing IT infrastructure and computing resources.
 3. Bias detection to ensure fair decision making 
 4. Robustness checks to ensure that small changes in the input do not lead to large changes in the output 
 5. Methods that provide recourse for those who have been adversely affected by model predictions 
+
 Depending on the model complexity, methods for model interpretability can be classified into intrinsic analysis and post hoc analysis.Intrinsic analysis can be applied to interpret models that have low complexity (simple relationships between the input variables and the predictions) while post hoc analysis can be applied to interpret simpler models as well as more complex models, such as neural networks, which have the ability to capture non-linear interactions [2]. These methods are often model-agnostic and provide mechanisms to interpret a trained model based on the inputs and output predictions. Post hoc analysis can be performed at a local level, or at a global level [2]. An AWS white paper provides a detailed explanation of the various techniques for model interpretability and can be accessed here (https://docs.aws.amazon.com/whitepapers/latest/ml-best-practices-healthcare-life-sciences/model-interpretability.html)
 
 
