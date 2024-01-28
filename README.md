@@ -48,3 +48,21 @@ Depending on the model complexity, methods for model interpretability can be cla
 - Post-hoc Analysis: This involves examining an AI system’s decisions after deployment to identify instances of bias and understand its impact on users and society.
 # References:
 1. https://encord.com/blog/reducing-bias-machine-learning/
+
+# Versioning and Proper Documentation on Model Design and Implications:
+Versioning management tools like Github and Bitbucket exist to manage software development versioning and documentation. Machine learning models which are basically a complex ecosystem of data, algorithms and code also require versioning and documentation. Version Control is the process of tracking and managing software changes over time. Whether you’re building an app or an ML model, you need to track every modification done by members of the software team to fix bugs and avoid conflicts [1]. The machine learning development process requires a lot of iterative work, where the developers and Data Scientists are searching for the best performing model while changing hyperparameters, code, and data. It is therefore important to keep a history of these changes to track model performance relative to the parameters, which saves you the time you would spend retraining the model for experimentation or deployment purposes [1]. 
+Machine learning version control has three parts [1]:
+A. Code
+There is modelling code and implementation code. Modelling code is used to implement the model, and implementation code is used for inference. They can both be written in different programming languages, but it might make it more difficult to maintain all of your code and dependencies. 
+
+B. Data
+There is metadata, which is information about your data and model. Then there is the actual data, the datasets that you use to train and run your model. Metadata can change without any change in the data, and versioning should link the data to the appropriate meta information
+
+C. Model
+The model is the glue that connects all of the above with model parameters and hyperparameters to produce a finished product.
+
+Versioning models and data creates a framework for better monitoring of the models. In addition, versioning serves as an accelerator on how frequently the models can be updated and placed in production [2]. With proper versioning and documentation, we can combine model predictions and the corresponding input data with model versions and trained data. With this kind of logical grouping, we can eventually detect data drifts and model miss performances which then allow for better model retraining and troubleshooting [2].
+More information about version and proper documentation can be found in this excellent resource here (https://neptune.ai/blog/version-control-for-ml-models)
+# References:
+1. https://neptune.ai/blog/version-control-for-ml-models
+2. https://www.silo.ai/blog/versioning-transparency-monitoring-in-machine-learning-pipelines
