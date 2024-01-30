@@ -87,10 +87,15 @@ ML fairness and monitoring are increasingly becoming critical components of mach
 # Evaluate Algorithms and Output for Bias:
 Algorithmic bias occurs when AI/ML model design, data, and sampling result in measurably different model performance for different subgroups [1]. The two major courses of algorithmic bias are subgroup invalidity and label choice bias. Subgroup invalidity occurs when AI/ML is predicting an appropriate outcome or measure, but the model does not perform well for particular subgroups [1]. The underlying cause is when AI/ML models are trained on non-diverse populations or with data that underrepresents the subgroup or fails to include specific risk factors affecting them [1]. Label choice bias occurs when the algorithm’s predicted outcome is a proxy variable for the actual outcome it should be predicting [1].
 The following steps can be taken to evaluate algorithms and output for bias [1,2]. 
+
 A. Examine the data for problems related to lacking diversity and poor performance for underserved groups. Confirm that the data on which the models are trained is representative of the populations to which they will be applied. Consider how subgroups are defined and the fraction of each subgroup relative to the total population. If definitions differ from the training set to your population, the model may be potentially biased.
+
 B. Measure performance in each subgroup to ensure models are well calibrated and do not perform worse for any particular group. But note that, good performance across subgroups does not guarantee a lack of bias, but it is a key step to avoiding it.
+
 C. Establish processes to systematically evaluate the potential for label choice bias with multiple stakeholders and also attempt to ensure the labels used in training data align with your organization’s intended use.
+
 D. Assess inputs and outputs of each algorithm and determine whether they are susceptible to or demonstrate bias. Pay close attention to whether proxies that an algorithm uses could introduce bias. Articulate the algorithm’s ideal target vs. its actual target.
+
 E. If bias is detected in an algorithm, find a way to improve it, such as retraining it with more data or predicting a slightly different outcome.
 
 # References:
