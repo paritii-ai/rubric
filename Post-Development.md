@@ -72,3 +72,12 @@ E. If bias is detected in an algorithm, find a way to improve it, such as retrai
 # References:
 1. https://www.closedloop.ai/blog/four-steps-to-measure-and-mitigate-algorithmic-bias-in-healthcare/
 2. https://www.aha.org/aha-center-health-innovation-market-scan/2021-10-05-4-steps-mitigate-algorithmic-bias
+
+# Potential impact assessment of Output:
+It is imoprtant to practically test the output of a machine learning model prior to human interpretation. There are three testing methods that can be used, namely [1];
+
+1. Invariance Test - The invariance test defines input changes that are expected to leave model outputs unaffected. A common method for testing invariance is related to data augmentation. You pair up modified and unmodified input examples and see how much this affects the model output.
+2. Directional Expectation Test - A directional expectation test is a test which is run to check hpw a change in the input distribution changes the expected output. An example is  testing assumptions about the number of bathrooms or property size when predicting house prices. A higher number of bathrooms should mean a higher price prediction. Seeing a different result might reveal wrong assumptions about the relationship between our input and output or the distribution of our dataset.
+3. Minimum Functionality Test - The minimum functionality test helps you decide whether individual model components behave as expected. The reasoning behind these tests is that overall, output-based performance can conceal critical upcoming issues in your model. A few ways to do this are, create samples that are “very easy” for the model to predict, in order to see if they consistently deliver these types of predictions; test data segments and subsets that meet a specific criteria; test for failure modes you have identified during manual error analysis.
+# Reference:
+1. https://deepchecks.com/how-to-test-machine-learning-models/
