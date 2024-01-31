@@ -81,3 +81,14 @@ It is imoprtant to practically test the output of a machine learning model prior
 3. Minimum Functionality Test - The minimum functionality test helps you decide whether individual model components behave as expected. The reasoning behind these tests is that overall, output-based performance can conceal critical upcoming issues in your model. A few ways to do this are, create samples that are “very easy” for the model to predict, in order to see if they consistently deliver these types of predictions; test data segments and subsets that meet a specific criteria; test for failure modes you have identified during manual error analysis.
 # Reference:
 1. https://deepchecks.com/how-to-test-machine-learning-models/
+
+# Practical Ways of Mitigating Biases in the Use of the Output (Misuse, Misaligned use, and Misinterpretation of the Output):
+AI developers who develop ML models in order to mitigate biases in the output can follow the suggestions to include a “model facts label”, i.e., a 1-page of relevant and actionable information to ensure that front-line users know how, when, how not to use the output [1]. The model facts label can include a short summary about the AI system, the working mechanism (including the source and baseline characteristics of data used for AI development), results of validation studies, guidelines for use (including benefits and appropriate decision support), warnings (including potential risks and consequences), and other relevant information related to the AI system [1]. 
+Another practical technical way of mitigating bias is to use the eqaulized odds post-processing. This is a post-processing technique that solves a linear program to find probabilities with which to change output labels to optimize equalized odds [2]. A Python implementation of this technique can be found here (https://aif360.readthedocs.io/en/v0.2.3/modules/postprocessing.html)
+
+
+# References:
+1. Cristina González-Gonzalo, Eric F. Thee, Caroline C.W. Klaver, Aaron Y. Lee, Reinier O. Schlingemann, Adnan Tufail, Frank Verbraak, Clara I. Sánchez,Trustworthy AI: Closing the gap between development and integration of AI systems in ophthalmic practice, Progress in Retinal and Eye Research,Volume 90,2022,101034,ISSN13509462, https://doi.org/10.1016/j.preteyeres.2021.101034(https://www.sciencedirect.com/science/article/pii/S1350946221000951).
+2. https://aif360.readthedocs.io/en/v0.2.3/modules/postprocessing.html
+
+
