@@ -182,3 +182,34 @@ L. Examine Feature Importance: Understand which features contribute the most to 
 1. https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229
 2. https://www.analyticsvidhya.com/blog/2023/01/ensemble-learning-methods-bagging-boosting-and-stacking/
 
+
+# Ethical infrastructure: Choose Deployment Platforms that Allow for Proper Model Management - e.g. TensorFlow, TouchServe, AWS SageMaker
+Selecting deployment platforms that facilitate proper model management is a crucial aspect of building an ethical infrastructure for machine learning applications. The choice of deployment platforms can significantly impact the transparency, accountability, and fairness of your models.
+Deployment platforms should combine a wide range of essential capabilities and tools, which should include [1]:
+
+Data management and preprocessing: Provide capabilities for data ingestion, storage, and preprocessing, allowing you to efficiently manage and prepare data for training and evaluation. This includes features for data labeling, data versioning, data augmentation, and integration with popular data storage systems.
+
+Experimentation and model development: Platforms should offer features for you to design and run experiments, explore different algorithms and architectures, and optimize model performance. This includes features for hyperparameter tuning, automated model selection, and visualization of model metrics.
+
+Model deployment and serving: Enable seamless model deployment and serving by providing features for containerization, API management, and scalable serving infrastructure.
+
+Model monitoring and performance tracking: Platforms should include capabilities to monitor and track the performance of deployed ML models in real-time. This includes features for logging, monitoring model metrics, detecting anomalies, and alerting, allowing you to ensure the reliability, stability, and optimal performance of your models.
+
+Some widely used deployment platforms that promote ethical considerations are listed below:
+ 1. TensorFlow Serving: TensorFlow Serving is designed for serving machine learning models in production environments. It allows you to deploy models trained with TensorFlow, ensuring a seamless transition from development to deployment. TensorFlow Serving supports versioning and can handle multiple model versions simultaneously, facilitating model management and updates.
+
+2. TensorFlow Extended (TFX): TFX is an end-to-end platform for deploying production-ready machine learning models. It provides components for every stage of the machine learning lifecycle, including data validation, model training, and serving. TFX supports model versioning and allows for the integration of fairness and explainability tools.
+
+3. AWS SageMaker: Amazon SageMaker is a comprehensive machine learning platform offered by AWS. It streamlines the entire machine learning workflow, from model development to deployment. SageMaker allows for easy model versioning, A/B testing, and monitoring. It also provides tools for model explainability, which is essential for understanding and mitigating biases.
+
+4. Microsoft Azure Machine Learning: Azure Machine Learning is a cloud-based service that facilitates the end-to-end machine learning lifecycle. It supports deploying models as web services and provides tools for monitoring, versioning, and managing models. Azure also includes responsible AI capabilities to address fairness, interpretability, and transparency.
+
+5. Google AI Platform: Google AI Platform is a cloud-based service for building, deploying, and managing machine learning models on Google Cloud. It supports the deployment of models trained with TensorFlow, scikit-learn, and other frameworks. It facilitates model versioning, monitoring, and model explainability.
+
+6. Hugging Face Transformers: Hugging Face provides the Transformers library, which allows for easy deployment of pre-trained models for natural language processing tasks. The platform supports model versioning and has become popular for its simplicity and extensive model repository.
+
+7. Docker and Kubernetes: Containerization tools like Docker and orchestration platforms like Kubernetes can provide flexibility and scalability in deploying machine learning models. Containers encapsulate models and dependencies, simplifying deployment across different environments.
+
+When choosing a deployment platform for ethical model management, you should consider factors such as ease of use, integration with ethical AI tools, support for model explainability, and the ability to monitor and audit model performance. Additionally, ensure that the platform aligns with your organization's ethical principles and regulatory requirements. Regularly update models, perform audits, and stay informed about advancements in ethical AI practices to maintain a robust ethical infrastructure.
+# References:
+1. https://neptune.ai/blog/mlops-tools-platforms-landscape
