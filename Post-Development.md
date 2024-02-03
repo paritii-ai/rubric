@@ -113,3 +113,40 @@ Another practical technical way of mitigating bias is to use the eqaulized odds 
 1. Cristina González-Gonzalo, Eric F. Thee, Caroline C.W. Klaver, Aaron Y. Lee, Reinier O. Schlingemann, Adnan Tufail, Frank Verbraak, Clara I. Sánchez,Trustworthy AI: Closing the gap between development and integration of AI systems in ophthalmic practice, Progress in Retinal and Eye Research,Volume 90,2022,101034,ISSN13509462, https://doi.org/10.1016/j.preteyeres.2021.101034(https://www.sciencedirect.com/science/article/pii/S1350946221000951).
 2. https://aif360.readthedocs.io/en/v0.2.3/modules/postprocessing.html
 
+# Mitigating Biases Between vs Within Groups:
+In-group bias (also known as in-group favoritism) is the tendency for people to give preferential treatment to others who belong to the same group that they do [1]. Machine learning can also amplify in-group biases. Datasets that train AI software are usually skewed towards one group or against another [1]. 
+Mitigating biases between groups and within groups involves addressing both systemic biases that affect different demographic or user groups and biases that arise within specific subgroups. Here are strategies for mitigating biases at both levels:
+
+Biases Between Groups:
+- Diverse Representation in Data: Ensure that your training data includes diverse samples from all relevant demographic groups to avoid under-representation or marginalization.
+
+- Fair Sampling: Use techniques such as stratified sampling to ensure that each subgroup is adequately represented in the training data, preventing biases related to group size.
+
+- Demographic-Aware Features: Develop features that are sensitive to demographic differences, ensuring that the algorithm considers and appropriately adjusts for variations between groups.
+- Equalized Odds: Implement fairness metrics like equalized odds, which aims to ensure that the algorithm's predictions are equally accurate across different demographic groups.
+
+- Fair Pre-Processing: Apply pre-processing techniques to the data to mitigate biases before training the algorithm, addressing disparities between groups.
+
+- Bias-Aware Algorithms: Use algorithms specifically designed to be aware of and mitigate biases. Fairness-aware machine learning models incorporate fairness constraints during training.
+
+
+Biases Within Groups:
+- Subgroup Analysis: Conduct subgroup analysis to identify biases within specific groups. This involves examining how the algorithm's performance varies across subpopulations.
+
+- Fine-Grained Fairness Metrics: Define and use fine-grained fairness metrics that assess performance within subgroups, ensuring that biases are not perpetuated within specific communities.
+
+- Customized Mitigation Strategies: Develop targeted mitigation strategies for specific subgroups if biases are identified. This could involve adjusting model parameters or implementing custom fairness interventions.
+
+- Localized Training Data: If applicable, consider using localized or customized training data for certain subgroups to address specific cultural or contextual nuances.
+
+- Sensitivity Analysis: Conduct sensitivity analyses to understand how changes in input features affect outcomes within different subgroups. This can help identify and address biases at a granular level.
+
+- User Feedback Loops: Establish feedback mechanisms that allow users to report biases or issues specific to their subgroup. Use this feedback to continuously improve the algorithm.
+
+- Inclusive Design Principles: Incorporate inclusive design principles, involving users from diverse backgrounds in the development process to ensure that the algorithm meets the needs of all user groups.
+
+- Regular Audits: Implement regular audits and evaluations of the algorithm's performance, focusing on both overall fairness and fairness within specific subgroups.
+It's important to approach bias mitigation comprehensively, addressing both systemic biases between groups and biases that may exist within specific subgroups. Additionally, involving stakeholders from diverse backgrounds throughout the development process enhances the likelihood of creating fair and unbiased algorithms.
+
+# References:
+1. https://thedecisionlab.com/biases/in-group-bias
