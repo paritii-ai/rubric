@@ -93,24 +93,33 @@ Another practical technical way of mitigating bias is to use the eqaulized odds 
 
 # How to Evaluate Algorithms and Output for Bias:
 Algorithmic bias has the potential to cause serious harm and even have life-threatening impact on consumers of the output of ML/AI models. Hence, there is a practical need to evaluate algorithms and output for bias. There are a few steps that can be implemented namely[1];
+
 A. Inventory of algorithms - Maintain a detailed inventory of all algorithms being used or developed. Include information such as the purpose, functionality, development stage, and key components. Form a diverse committee comprising internal and external stakeholders, including subject matter experts, data scientists, legal experts, and ethicists. This committee should meet regularly to discuss algorithmic developments, ethical considerations, and potential impacts.
+
 B. Screen each algorithm for bias - Some general steps that you can take to screen algorithms for bias are as follows
       - Define Bias: Clearly define what bias means in the context of your application. Bias can manifest in various ways, such as 
          racial, gender, or socioeconomic bias.
+     
       - Diverse Dataset: Ensure that your training dataset is diverse and representative of the population your algorithm is intended to 
         serve. Biased training data can lead to biased models.
+      
       - Data Preprocessing: Carefully preprocess and clean the data to remove any existing biases. Be aware of potential biases 
        introduced during data collection or labeling.
+      
       - Fair Features: Identify and analyze the features used by the algorithm. Check for any features that may disproportionately 
         impact 
        certain groups and assess their relevance.
+     
       - Regular Audits: Conduct regular audits of the algorithm's output to detect any patterns of bias. This includes monitoring for 
        disparate impacts on different demographic groups.
+     
       - Bias Metrics: Develop and use specific metrics to measure bias. Metrics such as disparate impact, equalized odds, and 
         demographic parity can help quantify and identify bias.
+      
       - Post-Processing Techniques: Implement post-processing techniques to mitigate bias. This can include re-ranking or re-scoring 
         algorithmic outputs to achieve fairness.
-On the technical side, python libraries like Aequitas (http://aequitas.dssg.io/) can be used to test for bias in the features and output of the algorithm 
+
+On the technical side, python libraries like Aequitas (http://aequitas.dssg.io/) can be used to test for bias in the features and output of the algorithm. Aequitas is an open-source bias audit toolkit for machine learning developers, analysts, and policymakers to audit machine learning models for discrimination and bias, and make informed and equitable decisions around developing and deploying predictive risk-assessment tools [2]
 Encourage users to provide feedback on the algorithm's outputs, especially if they believe bias may be present. This feedback loop can be valuable for continuous improvement.
 
 # References:
