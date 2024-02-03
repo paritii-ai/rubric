@@ -57,42 +57,8 @@ ML fairness and monitoring are increasingly becoming critical components of mach
 
 # Evaluate Algorithms and Output for Bias:
 Algorithmic bias occurs when AI/ML model design, data, and sampling result in measurably different model performance for different subgroups [1]. The two major courses of algorithmic bias are subgroup invalidity and label choice bias. Subgroup invalidity occurs when AI/ML is predicting an appropriate outcome or measure, but the model does not perform well for particular subgroups [1]. The underlying cause is when AI/ML models are trained on non-diverse populations or with data that underrepresents the subgroup or fails to include specific risk factors affecting them [1]. Label choice bias occurs when the algorithm’s predicted outcome is a proxy variable for the actual outcome it should be predicting [1].
-The following steps can be taken to evaluate algorithms and output for bias [1,2]. 
 
-A. Examine the data for problems related to lacking diversity and poor performance for underserved groups. Confirm that the data on which the models are trained is representative of the populations to which they will be applied. Consider how subgroups are defined and the fraction of each subgroup relative to the total population. If definitions differ from the training set to your population, the model may be potentially biased.
-
-B. Measure performance in each subgroup to ensure models are well calibrated and do not perform worse for any particular group. But note that, good performance across subgroups does not guarantee a lack of bias, but it is a key step to avoiding it.
-
-C. Establish processes to systematically evaluate the potential for label choice bias with multiple stakeholders and also attempt to ensure the labels used in training data align with your organization’s intended use.
-
-D. Assess inputs and outputs of each algorithm and determine whether they are susceptible to or demonstrate bias. Pay close attention to whether proxies that an algorithm uses could introduce bias. Articulate the algorithm’s ideal target vs. its actual target.
-
-E. If bias is detected in an algorithm, find a way to improve it, such as retraining it with more data or predicting a slightly different outcome.
-
-# References:
-1. https://www.closedloop.ai/blog/four-steps-to-measure-and-mitigate-algorithmic-bias-in-healthcare/
-2. https://www.aha.org/aha-center-health-innovation-market-scan/2021-10-05-4-steps-mitigate-algorithmic-bias
-
-# Potential impact assessment of Output:
-It is imoprtant to practically test the output of a machine learning model prior to human interpretation. There are three testing methods that can be used, namely [1];
-
-1. Invariance Test - The invariance test defines input changes that are expected to leave model outputs unaffected. A common method for testing invariance is related to data augmentation. You pair up modified and unmodified input examples and see how much this affects the model output.
-2. Directional Expectation Test - A directional expectation test is a test which is run to check hpw a change in the input distribution changes the expected output. An example is  testing assumptions about the number of bathrooms or property size when predicting house prices. A higher number of bathrooms should mean a higher price prediction. Seeing a different result might reveal wrong assumptions about the relationship between our input and output or the distribution of our dataset.
-3. Minimum Functionality Test - The minimum functionality test helps you decide whether individual model components behave as expected. The reasoning behind these tests is that overall, output-based performance can conceal critical upcoming issues in your model. A few ways to do this are, create samples that are “very easy” for the model to predict, in order to see if they consistently deliver these types of predictions; test data segments and subsets that meet a specific criteria; test for failure modes you have identified during manual error analysis.
-# Reference:
-1. https://deepchecks.com/how-to-test-machine-learning-models/
-
-# Practical Ways of Mitigating Biases in the Use of the Output (Misuse, Misaligned use, and Misinterpretation of the Output):
-AI developers who develop ML models in order to mitigate biases in the output can follow the suggestions to include a “model facts label”, i.e., a 1-page of relevant and actionable information to ensure that front-line users know how, when, how not to use the output [1]. The model facts label can include a short summary about the AI system, the working mechanism (including the source and baseline characteristics of data used for AI development), results of validation studies, guidelines for use (including benefits and appropriate decision support), warnings (including potential risks and consequences), and other relevant information related to the AI system [1]. 
-Another practical technical way of mitigating bias is to use the eqaulized odds post-processing. This is a post-processing technique that solves a linear program to find probabilities with which to change output labels to optimize equalized odds [2]. A Python implementation of this technique can be found here (https://aif360.readthedocs.io/en/v0.2.3/modules/postprocessing.html)
-
-
-# References:
-1. Cristina González-Gonzalo, Eric F. Thee, Caroline C.W. Klaver, Aaron Y. Lee, Reinier O. Schlingemann, Adnan Tufail, Frank Verbraak, Clara I. Sánchez,Trustworthy AI: Closing the gap between development and integration of AI systems in ophthalmic practice, Progress in Retinal and Eye Research,Volume 90,2022,101034,ISSN13509462, https://doi.org/10.1016/j.preteyeres.2021.101034(https://www.sciencedirect.com/science/article/pii/S1350946221000951).
-2. https://aif360.readthedocs.io/en/v0.2.3/modules/postprocessing.html
-
-# How to Evaluate Algorithms and Output for Bias:
-Algorithmic bias has the potential to cause serious harm and even have life-threatening impact on consumers of the output of ML/AI models. Hence, there is a practical need to evaluate algorithms and output for bias. There are a few steps that can be implemented namely[1];
+Algorithmic bias has the potential to cause serious harm and even have life-threatening impact on consumers of the output of ML/AI models. Hence, there is a practical need to evaluate algorithms and output for bias. There are a few steps that can be implemented namely[2];
 
 A. Inventory of algorithms - Maintain a detailed inventory of all algorithms being used or developed. Include information such as the purpose, functionality, development stage, and key components. Form a diverse committee comprising internal and external stakeholders, including subject matter experts, data scientists, legal experts, and ethicists. This committee should meet regularly to discuss algorithmic developments, ethical considerations, and potential impacts.
 
@@ -119,11 +85,31 @@ B. Screen each algorithm for bias - Some general steps that you can take to scre
       - Post-Processing Techniques: Implement post-processing techniques to mitigate bias. This can include re-ranking or re-scoring 
         algorithmic outputs to achieve fairness.
 
-On the technical side, python libraries like Aequitas (http://aequitas.dssg.io/) can be used to test for bias in the features and output of the algorithm. Aequitas is an open-source bias audit toolkit for machine learning developers, analysts, and policymakers to audit machine learning models for discrimination and bias, and make informed and equitable decisions around developing and deploying predictive risk-assessment tools [2]
+On the technical side, python libraries like Aequitas (http://aequitas.dssg.io/) can be used to test for bias in the features and output of the algorithm. Aequitas is an open-source bias audit toolkit for machine learning developers, analysts, and policymakers to audit machine learning models for discrimination and bias, and make informed and equitable decisions around developing and deploying predictive risk-assessment tools [3]
 
 Encourage users to provide feedback on the algorithm's outputs, especially if they believe bias may be present. This feedback loop can be valuable for continuous improvement.
 
 # References:
-1. https://www.aha.org/aha-center-health-innovation-market-scan/2021-10-05-4-steps-mitigate-algorithmic-bias
-2. http://aequitas.dssg.io/
+1. https://www.closedloop.ai/blog/four-steps-to-measure-and-mitigate-algorithmic-bias-in-healthcare/
+2. https://www.aha.org/aha-center-health-innovation-market-scan/2021-10-05-4-steps-mitigate-algorithmic-bias
+3. http://aequitas.dssg.io/
+
+
+# Potential impact assessment of Output:
+It is imoprtant to practically test the output of a machine learning model prior to human interpretation. There are three testing methods that can be used, namely [1];
+
+1. Invariance Test - The invariance test defines input changes that are expected to leave model outputs unaffected. A common method for testing invariance is related to data augmentation. You pair up modified and unmodified input examples and see how much this affects the model output.
+2. Directional Expectation Test - A directional expectation test is a test which is run to check hpw a change in the input distribution changes the expected output. An example is  testing assumptions about the number of bathrooms or property size when predicting house prices. A higher number of bathrooms should mean a higher price prediction. Seeing a different result might reveal wrong assumptions about the relationship between our input and output or the distribution of our dataset.
+3. Minimum Functionality Test - The minimum functionality test helps you decide whether individual model components behave as expected. The reasoning behind these tests is that overall, output-based performance can conceal critical upcoming issues in your model. A few ways to do this are, create samples that are “very easy” for the model to predict, in order to see if they consistently deliver these types of predictions; test data segments and subsets that meet a specific criteria; test for failure modes you have identified during manual error analysis.
+# Reference:
+1. https://deepchecks.com/how-to-test-machine-learning-models/
+
+# Practical Ways of Mitigating Biases in the Use of the Output (Misuse, Misaligned use, and Misinterpretation of the Output):
+AI developers who develop ML models in order to mitigate biases in the output can follow the suggestions to include a “model facts label”, i.e., a 1-page of relevant and actionable information to ensure that front-line users know how, when, how not to use the output [1]. The model facts label can include a short summary about the AI system, the working mechanism (including the source and baseline characteristics of data used for AI development), results of validation studies, guidelines for use (including benefits and appropriate decision support), warnings (including potential risks and consequences), and other relevant information related to the AI system [1]. 
+Another practical technical way of mitigating bias is to use the eqaulized odds post-processing. This is a post-processing technique that solves a linear program to find probabilities with which to change output labels to optimize equalized odds [2]. A Python implementation of this technique can be found here (https://aif360.readthedocs.io/en/v0.2.3/modules/postprocessing.html)
+
+
+# References:
+1. Cristina González-Gonzalo, Eric F. Thee, Caroline C.W. Klaver, Aaron Y. Lee, Reinier O. Schlingemann, Adnan Tufail, Frank Verbraak, Clara I. Sánchez,Trustworthy AI: Closing the gap between development and integration of AI systems in ophthalmic practice, Progress in Retinal and Eye Research,Volume 90,2022,101034,ISSN13509462, https://doi.org/10.1016/j.preteyeres.2021.101034(https://www.sciencedirect.com/science/article/pii/S1350946221000951).
+2. https://aif360.readthedocs.io/en/v0.2.3/modules/postprocessing.html
 
