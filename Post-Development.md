@@ -120,6 +120,7 @@ B. Screen each algorithm for bias - Some general steps that you can take to scre
         algorithmic outputs to achieve fairness.
 
 On the technical side, python libraries like Aequitas (http://aequitas.dssg.io/) can be used to test for bias in the features and output of the algorithm. Aequitas is an open-source bias audit toolkit for machine learning developers, analysts, and policymakers to audit machine learning models for discrimination and bias, and make informed and equitable decisions around developing and deploying predictive risk-assessment tools [2]
+
 Encourage users to provide feedback on the algorithm's outputs, especially if they believe bias may be present. This feedback loop can be valuable for continuous improvement.
 
 # References:
