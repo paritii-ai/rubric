@@ -253,3 +253,8 @@ Consider any biases introduced during the deployment of models in specific appli
 - Document biases that may arise in user feedback and consider their potential impact on model improvement efforts
 
 - Document how the model aligns with ethical guidelines and principles established by the organization and identify ethical concerns and potential societal impacts.
+
+# Explain which Data Features the Model Considers Important and Why Those Were Selected:
+
+
+- 
