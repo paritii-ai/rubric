@@ -227,3 +227,29 @@ Define protocols for model retraining, specifying when and how retraining should
 # References:
 1. https://neptune.ai/blog/how-to-monitor-your-models-in-production-guide
 2. https://learn.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?
+
+# Document Potential Biases and Where They Arise:
+The documentation ofpotential biases and understanding where they arise is a crucial step in addressing fairness and ethics in machine learning models. The following structured approach to document potential biases can be applied;
+
+- Document sources of bias in the data collection process (e.g., underrepresentation of certain groups, sampling biases)
+
+- Note any biases introduced by data collection methods (e.g., survey design, data labeling).
+
+- Note any biases introduced by data collection methods (e.g., survey design, data labeling)
+
+- Document preprocessing steps that may inadvertently introduce biases (e.g., normalization, imputation techniques)
+
+- Identify features that may be proxies for sensitive attributes (e.g., gender, race) and prone to introducing biases. Document decisions related to the inclusion or exclusion of such features in the model.
+
+- Document the choice of algorithms and their potential biases (e.g., models trained on biased datasets, biased loss functions) and note any hyperparameter settings that may amplify or mitigate biases.
+
+- Document efforts to address class imbalances and potential impacts on model fairness and note any techniques used to mitigate biases during training.
+
+- Document the choice of evaluation metrics and consider whether they are appropriate for all relevant groups and be aware of metrics that may mask disparities or unfairly advantage certain groups.
+
+- Document potential biases that may arise in the deployment environment (e.g., changes in user behavior, evolving data distributions).
+Consider any biases introduced during the deployment of models in specific applications
+
+- Document biases that may arise in user feedback and consider their potential impact on model improvement efforts
+
+- Document how the model aligns with ethical guidelines and principles established by the organization and identify ethical concerns and potential societal impacts.
