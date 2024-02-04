@@ -229,7 +229,7 @@ Define protocols for model retraining, specifying when and how retraining should
 2. https://learn.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?
 
 # Document Potential Biases and Where They Arise:
-The documentation ofpotential biases and understanding where they arise is a crucial step in addressing fairness and ethics in machine learning models. The following structured approach to document potential biases can be applied;
+The documentation of potential biases and understanding where they arise is a crucial step in addressing fairness and ethics in machine learning models. The following structured approach to document potential biases can be applied;
 
 - Document sources of bias in the data collection process (e.g., underrepresentation of certain groups, sampling biases)
 
