@@ -271,3 +271,37 @@ Optimal feature selection provides greater predictive and explainability power o
 # References:
 1. https://www.heavy.ai/technical-glossary/feature-selection
 
+# Document the Demographics of the Training Dataset:
+The documentation the demographics of the training dataset is an important step in understanding potential biases and ensuring transparency in machine learning models. This documentation helps stakeholders, including data scientists, policymakers, and users, gain insights into the representation of different demographic groups in the data. Demographic representativeness in training data and model transparency is necessary to ensure that ML models are deployed in an equitable and reproducible manner. Wider adoption of reporting guidelines is warranted to improve representativeness and reproducibility [1].
+A potentially useful guide on how to document the demographics of a training dataset:
+1. Identify Relevant Demographic Categories:
+- Age: Document the age distribution of individuals in the dataset.
+- Gender: Note the gender distribution, ensuring representation of diverse gender identities.
+- Race and Ethnicity: Identify the racial and ethnic composition of the dataset.
+- Geographic Location: Document the geographic distribution of individuals, considering regional or country-level demographics.
+- Income Level: If applicable, document the income distribution of individuals in the dataset.
+- Education Level: Make a note of the educational background of individuals represented in the data.
+2. Data Collection Methods:
+- Sampling Strategies: Document the methods used for sampling data, including any oversampling or undersampling techniques.
+- Data Sources: Specify the sources of data, such as surveys, public records, or online platforms, and assess the representativeness of these sources.
+3. Potential Biases in Data Collection:
+- Underrepresentation: Identify any groups that may be underrepresented in the dataset and consider the implications for model generalization [2].
+- Sampling Bias: Document any biases introduced during the sampling process and assess their impact on the training data.
+4. Imbalances and Disparities:
+- Class Imbalances: Note if there are imbalances in the distribution of demographic classes, especially this is relevant for classification tasks.
+- Disparities: Assess if there are disparities in the quantity of data available for different demographic groups.
+5. Data Privacy and Ethics:
+- Privacy Considerations: Ensure compliance with privacy regulations and document any steps taken to protect sensitive demographic information.
+- Ethical Considerations: Document ethical considerations related to the use of demographic data, particularly when dealing with vulnerable or marginalized groups.
+6. Documentation Format:
+- Metadata: Include metadata that provides a summary of the demographic composition of the training dataset.
+- Visualizations: Use visualization techniques such as bar charts, pie charts, or heatmaps to illustrate the distribution of demographics.
+- Textual Description: Provide a written description of key findings and considerations related to the demographics of the dataset.
+7. Updates and Versioning:
+- Version Control: Implement version control for demographic documentation to track changes over time. Update documentation as the dataset evolves or as new information becomes available.
+8. Collaboration and Communication:
+- Stakeholder Involvement: Seek input from diverse stakeholders, including ethicists, domain experts, and community representatives, in the discussion and documentation process. Communicate findings and potential biases to relevant parties.
+
+# References:
+1. Bozkurt S, Cahan EM, Seneviratne MG, Sun R, Lossio-Ventura JA, Ioannidis JPA, Hernandez-Boussard T. Reporting of demographic data and representativeness in machine learning models using electronic health records. J Am Med Inform Assoc. 2020 Dec 9;27(12):1878-1884. doi: 10.1093/jamia/ocaa164. PMID: 32935131; PMCID: PMC7727384. (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7727384/)
+2. Norori N, Hu Q, Aellen FM, Faraci FD, Tzovara A. Addressing bias in big data and AI for health care: A call for open science. Patterns (N Y). 2021 Oct 8;2(10):100347. doi: 10.1016/j.patter.2021.100347. PMID: 34693373; PMCID: PMC8515002.(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8515002/)
