@@ -255,6 +255,19 @@ Consider any biases introduced during the deployment of models in specific appli
 - Document how the model aligns with ethical guidelines and principles established by the organization and identify ethical concerns and potential societal impacts.
 
 # Explain which Data Features the Model Considers Important and Why Those Were Selected:
+ Feature selection is the process of isolating the most consistent, non-redundant, and relevant features to use in model construction [1]. Understanding which data features a model considers important is a key aspect of model interpretability. The importance of features helps users, stakeholders, and data scientists gain insights into the decision-making process of the model.
+Some feature importance techniques are;
 
+- Permutation Importance: Assess the impact of shuffling individual features on model performance. If shuffling a feature significantly reduces model performance, that feature is considered important.
 
-- 
+- Feature Importance from Tree-Based Models: Tree-based models (e.g., decision trees, random forests, gradient boosting) naturally provide feature importance scores based on the contribution of each feature to the model's splits.
+
+- LASSO (L1 Regularization) Coefficients: In linear models with L1 regularization, the magnitude of the coefficients represents feature importance. Non-zero coefficients indicate important features.
+
+- Recursive Feature Elimination (RFE): This method iteratively removes the least important features until the desired number is reached, providing a ranking of feature importance.
+
+Optimal feature selection provides greater predictive and explainability power of ML models. Understanding and communicating feature importance contribute to model transparency, interpretability, and trust, allowing stakeholders to make informed decisions based on the model's insights.
+
+# References:
+1. https://www.heavy.ai/technical-glossary/feature-selection
+
