@@ -308,62 +308,74 @@ A potentially useful guide on how to document the demographics of a training dat
 
 # Explain How the ML Model Works, What Suggestions it Gives, How it Comes by those Suggestions:
 The following guidelines can be followed in conveying to end users how the model works, what suggestions the model gives and how it comes by these conclusions [1].
+
 A. Overview of the ML Model:
 Model Architecture:
 Briefly describe the type of machine learning model employed (e.g., regression, classification, neural network).
 Training Process:
 Explain how the model was trained using historical data to learn patterns and relationships.
+
 B. Input Features:
 Identification:
 List and describe the input features used by the model.
 Specify which features the model considers as significant for predictions.
 Data Representation:
 Explain how input data is represented and processed by the model (e.g., encoding, scaling).
+
 C. Model Inference:
 Prediction Mechanism:
 Describe how the model makes predictions based on new input data.
 Decision Boundary (if applicable):
 For classification models, explain how the decision boundary is established.
+
 D. Key Components:
 Feature Importance:
 If applicable, discuss which features the model considers most important in making predictions.
 Weights and Coefficients:
 If relevant (e.g., linear models), discuss the weights or coefficients assigned to each feature.
+
 E. Suggestions Provided:
 Output Format:
 Explain the format in which the model provides suggestions or predictions (e.g., numerical value, classification label).
 Actionable Recommendations:
 Detail the nature of the suggestions the model offers to end-users or stakeholders.
+
 F. Explainability Techniques:
 Model Interpretability:
 Describe any techniques used to enhance the interpretability of the model (e.g., SHAP values, LIME).
 Visualization Tools:
 If applicable, mention any visualizations or tools used to explain the model's decisions.
+
 G. Learning from Data:
 Adaptability:
 Explain whether the model is capable of learning and adapting to changes in input data.
 Training Updates:
 Describe any plans or protocols for updating the model based on new data.
+
 H. Limitations and Assumptions:
 Domain Constraints:
 Highlight any limitations or constraints within the problem domain that the model may encounter.
 Assumptions:
 Clearly state any assumptions the model makes during the prediction process.
+
 I. User Interaction:
 Feedback Loops:
 Explain how user feedback is incorporated to improve model performance.
 User-Friendly Outputs:
 Detail efforts made to present model outputs in a user-friendly and understandable manner.
+
 J. Ethical Considerations:
 Bias Mitigation:
 Describe measures taken to mitigate biases in the model's predictions.
 Fairness and Accountability:
 Address ethical considerations related to fairness and accountability in model predictions.
+
 K. Continuous Improvement:
 Monitoring Mechanisms:
 Explain how the model's performance is monitored over time.
 Iterative Enhancements:
 Outline plans for iterative improvements and updates based on ongoing evaluations.
+
 L. Conclusion:
 Summary:
 Summarize the key points regarding how the model works, the suggestions it provides, and the underlying mechanisms.
