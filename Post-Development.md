@@ -388,48 +388,64 @@ Emphasize the empowerment of users through a clear understanding of the model's 
 # Explain how to use the AI Product and in what Circumstances the Use Might Need Modification:
 An AI product is only as good as its usability and the ease with which users can interact with it[1]. The following guidelines can be used to smoothen the process of adoptibility for users.
 1. User Onboarding:
-   Guided Setup: Provide a user-friendly setup process, guiding users through initial steps to use the AI product.
-   Tutorials: Offer tutorials or guides explaining key features and functionalities.
+  
+  Guided Setup: Provide a user-friendly setup process, guiding users through initial steps to use the AI product.
+   
+  Tutorials: Offer tutorials or guides explaining key features and functionalities.
 
 2. Input Data Preparation:
+  
    Data Input Format: Specify the required format for input data, ensuring users understand how to structure the data.
+   
    Data Validation: Implement validation mechanisms to catch errors in input data.
 
 3. Parameter Tuning:
+   
    User-Adjustable Parameters: Identify and communicate parameters that users can tune based on their specific needs. Provide default 
    settings but allow customization for diverse use cases.
 4. Feedback Mechanisms:
+   
    User Feedback Loops: Establish channels for users to provide feedback on the AI product's performance. Encourage users to report 
    issues or suggest improvements.
 5. Interpretability and Explainability:
+
    Explainability Features: Integrate features that explain the reasoning behind AI predictions. Offer visualizations or explanations 
    for transparency.
-6. Monitoring and Analytics:
+7. Monitoring and Analytics:
+
    Performance Dashboards: Provide users with dashboards displaying key performance metrics. Enable users to monitor the AI product's 
    performance over time.
-7. Adaptability to Data Changes:
+9. Adaptability to Data Changes:
+
    Data Drift Monitoring: Implement mechanisms to detect and alert users to changes in the input data distribution. Provide guidance on 
    adapting the model to new data.
-8. Scaling and Resource Management:
-   Scalability Guidelines: Offer guidelines for scaling the AI product as user demands grow. Provide recommendations for resource 
+11. Scaling and Resource Management:
+
+    Scalability Guidelines: Offer guidelines for scaling the AI product as user demands grow. Provide recommendations for resource 
    allocation and optimization.
-9. Integration with Existing Systems:
-   APIs and Integration Documentation: Provide clear documentation and APIs for seamless integration with other systems.
-   Ensure compatibility with common data formats and protocols.
-10. Security and Privacy Considerations:
+13. Integration with Existing Systems:
+
+    APIs and Integration Documentation: Provide clear documentation and APIs for seamless integration with other systems. Ensure 
+    compatibility with common data formats and protocols.
+15. Security and Privacy Considerations:
+
     Data Protection Measures: Outline security measures in place to protect user data and maintain privacy.
     Educate users on best practices for secure usage.
     Customer Support: Offer accessible customer support channels for users facing challenges.
     Training Resources: Maintain a repository of training materials, including documentation, FAQs, and video tutorials.
-11. Version Control and Updates:
+17. Version Control and Updates:
+    
     Versioning System: Implement a versioning system for the AI product to manage updates. Communicate changes, improvements, and 
     potential impacts with each version.
-12. User Empowerment:
+18. User Empowerment:
+
     Educational Initiatives: Empower users through educational initiatives, webinars, and workshops. Foster a community where users can 
     share experiences and best practices.
-13. Circumstances for Modification:
+20. Circumstances for Modification:
+
     Feedback Analysis: Regularly analyze user feedback to identify areas for improvement.
     Changing User Needs: Stay attuned to evolving user needs and adapt the product accordingly.
+
     Technology Advancements: Monitor advancements in AI technology and consider updates to leverage new features.
 
 By providing a user-centric approach and addressing circumstances that may necessitate modifications, the AI product can remain adaptable, user-friendly, and aligned with evolving requirements.
