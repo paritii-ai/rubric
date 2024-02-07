@@ -479,3 +479,23 @@ By providing a user-centric approach and addressing circumstances that may neces
 
 # References:
 1. https://www.linkedin.com/advice/0/how-do-you-show-value-your-ai-stakeholders
+
+# Ensure Monitoring of Bias Detection in New Data Sets and New Features
+Monitoring bias detection in new datasets or features is essential for maintaining fairness and transparency in AI systems. The following steps are a helpful guide to apply. 
+- Identify key metrics to quantify bias in the dataset, such as demographic parity, equal opportunity, or disparate impact.
+
+- Implement automated processes to continuously monitor bias metrics in new datasets or features.
+
+- Integrate bias detection into the data pipeline, ensuring that it occurs as part of routine data processing.
+
+- Analyze the importance of new features in the model's predictions and assess their potential impact on bias.
+
+- Identify features that may correlate with sensitive attributes and require closer scrutiny.
+
+- Continuously evaluate the performance of AI models on new datasets, paying attention to fairness metrics across different demographic groups.
+
+- Compare model performance on historical and new data to detect discrepancies or biases.
+
+- Incorporate human reviewers or ethicists to assess potential biases in new datasets or features.
+
+Bias detection is an ongoing process and applying a systematized approach to it ensures the fairness and transparency of AI systems
