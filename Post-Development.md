@@ -480,7 +480,7 @@ By providing a user-centric approach and addressing circumstances that may neces
 # References:
 1. https://www.linkedin.com/advice/0/how-do-you-show-value-your-ai-stakeholders
 
-# Ensure Monitoring of Bias Detection in New Data Sets and New Features
+# Ensure Monitoring of Bias Detection in New Data Sets and New Features:
 Monitoring bias detection in new datasets or features is essential for maintaining fairness and transparency in AI systems. The following steps are a helpful guide to apply. 
 - Identify key metrics to quantify bias in the dataset, such as demographic parity, equal opportunity, or disparate impact.
 
@@ -499,3 +499,64 @@ Monitoring bias detection in new datasets or features is essential for maintaini
 - Incorporate human reviewers or ethicists to assess potential biases in new datasets or features.
 
 Bias detection is an ongoing process and applying a systematized approach to it ensures the fairness and transparency of AI systems
+
+# Model Comparison with Prior Versions/Versioning/Rollback Mechanisms/Incremental training:
+Comparing models with prior versions, implementing versioning, enabling rollback mechanisms, and incorporating incremental training are critical aspects of maintaining and improving machine learning models. These critical aspects need to be integrated into your workflow [1]. The following scheme can be followed in your data science workstream[1];
+
+1. Model Comparison with Prior Versions:
+Metric Tracking:
+Continuously track performance metrics (e.g., accuracy, precision, recall) for each model version.
+Compare the performance of new models with previous versions to assess improvements or regressions.
+
+2. Versioning:
+Unique Identifiers:
+Assign unique identifiers to each model version to facilitate tracking and management.
+Version Control Systems:
+Utilize version control systems (e.g., Git) to manage changes to model code, configurations, and data preprocessing steps.
+Model Metadata:
+Store metadata for each model version, including training data, hyperparameters, and evaluation results.
+
+3. Rollback Mechanisms:
+Automated Rollback:
+Implement automated rollback mechanisms triggered by performance degradation or validation failures.
+Rollback to the previous stable version to ensure uninterrupted service and mitigate risks associated with model regressions.
+Manual Intervention:
+Provide the option for manual intervention to initiate rollbacks based on human judgment or specific criteria.
+
+4. Incremental Training:
+Data Accumulation:
+Accumulate new data continuously or periodically to update models with the latest information.
+Retraining Strategies:
+Develop strategies for incremental training, such as online learning or mini-batch updates, to incorporate new data while minimizing computational resources.
+Transfer Learning:
+Leverage transfer learning techniques to adapt pre-trained models to new data domains or tasks efficiently.
+
+5. A/B Testing and Experimentation:
+Controlled Experiments:
+Conduct A/B tests to compare the performance of new model versions against baseline or existing models.
+Use experimentation frameworks to systematically evaluate changes and iterate on model improvements.
+
+6. Continuous Integration and Deployment (CI/CD):
+Automated Pipelines:
+Set up CI/CD pipelines to automate model training, testing, and deployment processes.
+Ensure that each code commit triggers automated tests and validation checks before deployment.
+
+7. Monitoring and Alerting:
+Performance Monitoring:
+Continuously monitor model performance in production, including latency, throughput, and accuracy.
+Anomaly Detection:
+Implement anomaly detection mechanisms to detect deviations from expected behavior and trigger alerts for potential issues.
+
+8. Documentation and Communication:
+Change Logs:
+Maintain detailed change logs documenting modifications made to each model version.
+Communication Channels:
+Establish communication channels for notifying stakeholders about model updates, rollbacks, and performance changes.
+
+9. Cross-Functional Collaboration:
+Stakeholder Involvement:
+Involve diverse stakeholders, including data scientists, engineers, product managers, and business analysts, in the model management process.
+Foster collaboration and knowledge sharing to ensure alignment with business goals and user needs.
+
+# References:
+1. https://towardsdatascience.com/model-rollbacks-through-versioning-7cdca954e1cc
