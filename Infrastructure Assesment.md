@@ -26,3 +26,7 @@ Evaluate your organization's existing IT infrastructure and computing resources.
 1. https://www.redhat.com/en/topics/ai/ai-infrastructure-explained
 2. https://www.techtarget.com/searchenterpriseai/feature/Designing-and-building-artificial-intelligence-infrastructure
 3. https://www.linkedin.com/pulse/essential-checklist-before-adopting-aiml-your-ragu
+
+
+
+
