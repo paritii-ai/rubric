@@ -1,5 +1,5 @@
 # Rubric: AI Equity Rubric Guidelines for Developers
-## Pre-Development Considerations
+
 ## Infrastructure Assessment:
 An organization seeking to build or implement an AI/ML system needs to conduct an infrastructure assessment to determine what they need to successfully build an AI/ML system. The infrastructure model consists of hardware and software components that are necessary for building and training AI models. Components such as specialized processors like GPUs (hardware) and optimization and deployment tools (software) fall under the infrastructure umbrella [1]. The following considerations will help organizations and developers navigate the process. 
 ### Organizations
@@ -28,7 +28,7 @@ Evaluate your organization's existing IT infrastructure and computing resources.
 3. https://www.linkedin.com/pulse/essential-checklist-before-adopting-aiml-your-ragu
 
 
-# Rubric: Logical Assumptions for Pre-Development Considerations
+## Logical Assumptions for Pre-Development Considerations
 ### Logical Foundation Assessment:
 An organization or developer planning to initiate a development project should establish a logical foundation, which involves understanding and framing the logical premises and constraints of the project. This includes assessing the logical consistency of the project goals, the feasibility of the approaches, and the alignment of the project with broader organizational objectives. Below are considerations that will guide organizations and developers through this crucial phase.
 
